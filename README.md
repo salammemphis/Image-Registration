@@ -1,2 +1,2 @@
 # Image-Registration
-This project is designed to provide hands-on experiences on image registration. A lecture has been added on image registration where I have explained image registration basics, different methods. Also, I have developed an end-to-end pipeline for multi-modal complex image registration using ANTs.
+This project is designed to provide hands-on experiences on image registration for 2D/3D data. Registering multimodal data obtained from various instruments such as EM, LM, SEM, PALM, MR .etc is very challenging. I have developed an end-to-end pipeline for multi-modal complex image registration using ANTs. To optimize computational complexity and memory requirement, the pipeline has been integrated with HPC.  
