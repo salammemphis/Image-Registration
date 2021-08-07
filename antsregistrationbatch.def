@@ -10,11 +10,11 @@ author: Shahinur Alam(sajonbuet@gmail.com)
 %files 
     #copy files inside container
     #utility program to generate reports from registration outcomes and logs
-	/home/salam/Study/IPP/ants/SingularityBuild/antsgeneratereport.py /home/
-    #/home/salam/Study/IPP/ants/SingularityBuild/log.txt /home/
-    /home/salam/Documents/workspace-sts-3.9.7.RELEASE/Genregreport/CreateLabelImage.py /home/
-    /home/salam/Documents/workspace-sts-3.9.7.RELEASE/Genregreport/Createmasks.py /home/
-    /home/salam/tools/image_new/fiji-linux64 /home/
+    antsgeneratereport.py /home/
+    log.txt /home/
+    CreateLabelImage.py /home/
+    Createmasks.py /home/
+    fiji-linux64 /home/
 
 %labels
     Maintainer Shahinur
@@ -357,7 +357,7 @@ if [ "$operation_type" = "quantifybrain" ]; then
 	export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS
 	export ANTSPATH=/code/bin/ants/bin
 	export PATH=${ANTSPATH}:$PATH
-	python3 /research/sharedresources/cbi/data_exchange/zakhagrp/shahinur/models/code/mousebrainsegmentation/quantify_brain.py "$path" "$mask_path" "$structure_file" "$resolution" "$interpolation"
+	python3 /home/quantify_brain.py "$path" "$mask_path" "$structure_file" "$resolution" "$interpolation"
 fi
 
             
